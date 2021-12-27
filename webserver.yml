@@ -10,20 +10,20 @@
 
   - name: i want start webserver on ubuntu node
     service: 
-      name: apache2
+      name: "{{mywebpackforubuntu}}"
       state: started    
     when: ansible_os_family=="Debian"
 
 
   - name: i want install webserver on ansible rehat node
     yum:
-     name: httpd
+     name: "{{mywebpachforredhat}}"
      state: present
     when: ansible_os_family=="RedHat"
 
 
   - name: i want install webserver on ansible redhat node
     service:
-     name: httpd
+     name: "{{mywebpachforredhat}}"
      state: started
     when: ansible_os_family=="RedHat" 
