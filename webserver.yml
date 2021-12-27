@@ -5,4 +5,9 @@
   - name: i want to install webserver on ansible ubuntu node
     apt:
      name: apache2
-     state: absent
+     state: present
+
+  - name: i want start webserver on ubuntu node
+    service: 
+      name: apache2
+      state: started    
