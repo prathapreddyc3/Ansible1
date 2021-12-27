@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.39.146
+- hosts: all
   become: yes
   tasks:
   - name: i want to install git on ansible ubuntu node
