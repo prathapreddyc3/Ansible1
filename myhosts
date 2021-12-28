@@ -4,12 +4,6 @@
 172.31.33.245
 
 
-[ubuntuserver]
-172.31.39.146
-
-[redhatserver]
-172.31.33.245
-
 [servers:vars]
 mywebpackforubuntu= apache2
 mywebpachforredhat= httpd
