@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install git
+    apt:
+     name: git
+     state: present 
+
+  - name: i want install tree
+    apt:
+     name: treegdg
+     state: present
+    ignore_errors: yes 
+
+  - name: i want install wget
+    apt:
+     name: wget
+     state: present     
