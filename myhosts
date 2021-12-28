@@ -8,7 +8,3 @@
 
 [myredhatserver]
 172.31.33.245
-
-[mywebservers:vars]
-mywebpackforubuntu= apache22
-mywebpackforredhat= httpd2
