@@ -24,6 +24,6 @@
 
   - name: i want install webserver on ansible redhat node
     service:
-     name: "{{mywebpackforredhat}}"
+     name: httpd
      state: started
     when: ansible_os_family=="RedHat" 
