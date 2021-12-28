@@ -3,5 +3,6 @@
   become: yes
   tasks:
   - name: create a file on node side
-    path: /home/ubuntu/testfile
-    state: touch
+    file:
+     path: /home/ubuntu/testfile
+     state: touch
