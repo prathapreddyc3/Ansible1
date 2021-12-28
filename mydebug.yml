@@ -7,5 +7,5 @@
     register: myresult
 
   - name: i wnat to display my first task result
-    degub:
+    debug:
      msg: "{{myresult}}"  
