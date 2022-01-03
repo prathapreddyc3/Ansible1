@@ -1,0 +1,5 @@
+---
+- hosts: myubuntuserver
+  become: yes
+  tasks:
+  - include_tasks: filesystem.yml
