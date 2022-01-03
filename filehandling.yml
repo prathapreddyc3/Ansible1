@@ -6,3 +6,7 @@
     yum:
      name: httpd
      state: present
+  - name: i wnant copy my index file into ansible node
+    template:
+     src: index.j2
+     dest: /var/www/html/index.html   
