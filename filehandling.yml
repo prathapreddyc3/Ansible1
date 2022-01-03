@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.39.146
+- hosts: 172.31.33.245
   become: yes
   tasks:
   - include_tasks: filesystem.yml
