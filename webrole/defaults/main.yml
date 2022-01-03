@@ -1,2 +1,6 @@
 ---
 # defaults file for webrole
+- name: i want install webserver
+  apt:
+   name: apache2
+   state: present
