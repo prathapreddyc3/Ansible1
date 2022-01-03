@@ -1,5 +1,0 @@
----
-- hosts: mywebservers
-  become: yes
-  roles: 
-   - {role: webrole, when: ansible_os_family=="Debian"}
